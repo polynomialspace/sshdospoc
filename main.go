@@ -33,7 +33,7 @@ func main() {
 	var target, user string
 	var connections int
 	flag.IntVar(&connections, "c", 100, "number of connections to initiate")
-	flag.StringVar(&target, "t", "", `target "host" or "host:port"`)
+	flag.StringVar(&target, "t", "", `target "host" or "host:port" (required)`)
 	flag.StringVar(&user, "u", "root", `user to ssh as; probably doesn't matter`)
 	flag.Parse()
 
